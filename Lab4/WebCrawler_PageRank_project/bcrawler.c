@@ -64,22 +64,6 @@ void waitListInserUrl(char* url, waitList* waitL);
 void waitListDeleteUrl(waitList* waitL);
 
 /*
-//fetchList: 用于存储所有爬取过了网页
-typedef struct fetchNode
-{
-	char* url;
-	struct fetchNode* next;
-}fetchNode;
-typedef struct fetchList
-{
-	fetchNode* head, * tail;
-	int count;
-}fetchList;
-//fetchL的插入
-void fetchListAdd(char* url, fetchList* fetchL);
-*/
-
-/*
 使用trie树来进行爬取的url存储与去重，同时在末尾节点存储链接关系
 */
 typedef struct trienode {
